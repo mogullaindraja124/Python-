@@ -1,0 +1,2 @@
+a="indraja"
+print(a)
