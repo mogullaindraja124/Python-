@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SA // BASECAMP — Precision Career Roadmaps</title>
+  <meta name="description" content="SA // BASECAMP: The career engine. Turning academic theory into industry-ready operational power through precision roadmaps.">
+  
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Persistent Sticky Navbar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="nav-container">
+      <a href="#" class="brand" id="brand-logo">
+        <i class="fa-solid fa-compass-drafting"></i> SA // BASECAMP
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-item active" id="nav-home">Home</a>
+        <a href="#/roadmaps" class="nav-item" id="nav-roadmaps">Roadmaps</a>
+        <a href="#/languages" class="nav-item" id="nav-languages">Languages</a>
+        <a href="#/login" class="nav-item" id="nav-login">Admin Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE 1 — HOME VIEW -->
+  <main class="page-view active" id="home-view">
+    <section class="container">
+      <div class="hero">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="live-dot"></span> Career Engine V2.0
+          </div>
+          <h1>Bridge the gap.<br><span>Master the Delta.</span></h1>
+          <p class="hero-subtext">
+            The career engine. We turn academic theory into industry-ready operational power through precision, week-by-week roadmaps.
+          </p>
+          <a href="#/roadmaps" class="btn-primary" id="home-cta-btn">
+            Build Your Roadmap <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          
+          <div class="stats-container">
+            <div class="stat-item">
+              <span class="stat-number" id="stat-roadmaps">294+</span>
+              <span class="stat-label">Roadmaps</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-experts">1,200+</span>
+              <span class="stat-label">Experts</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-students">850+</span>
+              <span class="stat-label">Students</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertical Animated Career-Progression Diagram -->
+        <div class="hero-right">
+          <div class="progression-flow">
+            <svg class="flow-svg" viewBox="0 0 400 480">
+              <path class="flow-path" d="M 60,30 Q 340,70 60,110 T 340,190 T 60,270 T 340,350 T 60,430" />
+            </svg>
+            
+            <div class="progression-card">
+              <div class="progression-num">01</div>
+              <div class="progression-details">
+                <h4>Student</h4>
+                <p>Phase: Foundation</p>
+              </div>
+            </div>
+            <div class="progression-card">
+              <div class="progression-num">02</div>
+              <div class="progression-details">
+                <h4>Intern</h4>
+                <p>Phase: Exposure</p>
+              </div>
+            </div>
+            <div class="progression-card">
+              <div class="progression-num">03</div>
+              <div class="progression-details">
+                <h4>Junior Dev</h4>
+                <p>Phase: Construction</p>
+              </div>
+            </div>
+            <div class="progression-card">
+              <div class="progression-num">04</div>
+              <div class="progression-details">
+                <h4>Mid-Level</h4>
+                <p>Phase: Autonomy</p>
+              </div>
+            </div>
+            <div class="progression-card">
+              <div class="progression-num">05</div>
+              <div class="progression-details">
+                <h4>Senior Dev</h4>
+                <p>Phase: Architecture</p>
+              </div>
+            </div>
+            <div class="progression-card">
+              <div class="progression-num">06</div>
+              <div class="progression-details">
+                <h4>Tech Lead</h4>
+                <p>Phase: Mastery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Hero Landing Variant -->
+      <div class="hero-alternate">
+        <h2>Empowering <span class="cycling-word" id="word-cycler">Dream</span></h2>
+        <p class="quote">"Explore our world of knowledge and chart your roadmap to success."</p>
+        <a href="#/roadmaps" class="btn-primary">
+          Begin Adventure <i class="fa-solid fa-compass"></i>
+        </a>
+      </div>
+
+      <!-- Premium Technical Courses -->
+      <div class="premium-courses">
+        <div class="section-header">
+          <div>
+            <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--primary-teal); letter-spacing: 2px; margin-bottom: 0.5rem; text-transform: uppercase;">>> Featured_Curriculum</h2>
+            <h2>Premium Technical Courses</h2>
+          </div>
+          <a href="#/languages" class="explore-link">Explore Library <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        
+        <div class="courses-grid" id="featured-courses-grid">
+          <!-- Role Mastery cards generated dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PAGE 2 — ROADMAPS ("Career Path Architect") -->
+  <div class="page-view" id="roadmaps-view">
+    <section class="container">
+      <div class="architect-card">
+        <h2>Career Path Architect</h2>
+        
+        <!-- Track Tabs -->
+        <div class="track-filter-container" id="track-filter-container">
+          <!-- Dynamically populated track categories -->
+        </div>
+
+        <!-- Selection Dropdowns -->
+        <div class="selectors-grid">
+          <div class="form-group">
+            <label for="select-academic-year">Current Academic Year</label>
+            <select class="custom-select" id="select-academic-year">
+              <option value="1st Year Student">1st Year Student</option>
+              <option value="2nd Year Student">2nd Year Student</option>
+              <option value="3rd Year Student">3rd Year Student</option>
+              <option value="Final Year Student">Final Year Student</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="select-target-role">Select Target Role</label>
+            <select class="custom-select" id="select-target-role">
+              <!-- Dynamically populated based on active category -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="select-duration">Learning Duration</label>
+            <select class="custom-select" id="select-duration">
+              <option value="1 Month">1 Month</option>
+              <option value="3 Months (Core)" selected>3 Months (Core)</option>
+              <option value="6 Months">6 Months</option>
+              <option value="12 Months">12 Months</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-construct" id="btn-construct-strategy">
+            Construct Strategy <i class="fa-solid fa-gears"></i>
+          </button>
+          <button class="btn-refresh" id="btn-refresh-data">
+            <i class="fa-solid fa-rotate"></i> Refresh Data
+          </button>
+        </div>
+      </div>
+
+      <!-- Generated Roadmap View Panel (Page 3 Tree layout) -->
+      <div class="roadmap-output" id="roadmap-output-panel">
+        <div class="roadmap-tree">
+          <div class="tree-header" id="tree-header-title">
+            Foundation & Tech
+          </div>
+          
+          <div id="tree-phases-container">
+            <!-- Dynamically generated phases & week cards -->
+          </div>
+        </div>
+
+        <!-- Interactive Walkthrough Node Detail Panel -->
+        <div class="walkthrough-panel" id="walkthrough-panel">
+          <h3 id="walkthrough-title">Topic walkthrough</h3>
+          <p id="walkthrough-desc">Hover or click a topic card above to inspect resources.</p>
+          <div class="walkthrough-resources">
+            <h4><i class="fa-solid fa-graduation-cap"></i> Recommended Resources</h4>
+            <div class="resource-list" id="walkthrough-resource-list">
+              <!-- Dynamic links -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE 4 — ROLE DETAIL PAGE (Triggered inside dynamic links) -->
+  <div class="page-view" id="role-detail-view">
+    <section class="container">
+      <a href="#/roadmaps" class="back-btn"><i class="fa-solid fa-arrow-left-long"></i> Back to Architect</a>
+      
+      <div class="role-detail-header">
+        <h2 id="role-detail-name">AI Software Developer</h2>
+        <p id="role-detail-track">1st Year Track // 3 Months Sprint</p>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-card">
+          <h3><i class="fa-solid fa-brain"></i> Aptitude Focus</h3>
+          <div class="pill-container" id="detail-aptitude-list">
+            <!-- Aptitude focus pills -->
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3><i class="fa-solid fa-user-gear"></i> Soft Skills</h3>
+          <div class="pill-container" id="detail-soft-list">
+            <!-- Soft skills pills -->
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3><i class="fa-solid fa-indian-rupee-sign"></i> Market Value</h3>
+          <div class="salary-row">
+            <span class="salary-label">Average Salary</span>
+            <span class="salary-value" id="detail-salary-avg">₹8.5 LPA</span>
+          </div>
+          <div class="salary-row">
+            <span class="salary-label">Salary Range</span>
+            <span class="salary-value range" id="detail-salary-range">₹4.5 - ₹15 LPA</span>
+          </div>
+          <div class="salary-row">
+            <span class="salary-label">Top Earners</span>
+            <span class="salary-value" id="detail-salary-top">₹25 LPA</span>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <h3><i class="fa-solid fa-building-circle-check"></i> Target Companies</h3>
+          <div class="pill-container" id="detail-companies-list">
+            <!-- Company pills -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE 5 — LANGUAGES / LANGUAGE LIBRARY -->
+  <div class="page-view" id="languages-view">
+    <section class="container">
+      <div class="library-intro">
+        <a href="#" class="back-btn"><i class="fa-solid fa-arrow-left-long"></i> Back to Home</a>
+        
+        <div class="live-badge-row">
+          <div class="live-badge">
+            <span class="live-dot"></span> LD(TECH-CODING) // LIVE LIBRARY
+          </div>
+          <span class="system-tag">System_V2.0</span>
+        </div>
+        
+        <h1 style="font-size: 3rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.75rem;">Language Library</h1>
+        <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 600px;">
+          Advanced technical roadmaps and architectural integration strategies for modern engineering teams.
+        </p>
+
+        <div class="search-box-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-bar" id="language-search-input" placeholder="Initialize language search..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="languages-grid" id="languages-grid-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE 6 — ADMIN LOGIN & DASHBOARD -->
+  <div class="page-view" id="login-view">
+    <section class="container">
+      <div class="login-container">
+        <div class="login-card">
+          <div class="login-icon"><i class="fa-solid fa-lock"></i></div>
+          <h2>Admin Login</h2>
+          <p>Secure access for SPECANCIENS basecamp managers.</p>
+          
+          <div class="login-error" id="login-error-message">Invalid username or password.</div>
+          
+          <div class="input-group">
+            <label for="admin-username">Admin Email</label>
+            <input type="email" id="admin-username" placeholder="admin@basecamp.com" required>
+          </div>
+          <div class="input-group">
+            <label for="admin-password">Password</label>
+            <input type="password" id="admin-password" placeholder="••••••••" required>
+          </div>
+          
+          <button class="btn-login" id="btn-admin-login">Login to System &rarr;</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ADMIN DASHBOARD VIEW (Visible after successful login) -->
+  <div class="page-view" id="admin-dashboard-view">
+    <section class="container">
+      <div class="admin-header">
+        <div>
+          <h2>Admin Control Dashboard</h2>
+          <p>Manage roadmap tracks, target roles, durations, salaries, and company metrics.</p>
+        </div>
+        <button class="btn-logout" id="btn-admin-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+      </div>
+
+      <div class="admin-grid">
+        <aside class="admin-sidebar">
+          <h3>Data Management</h3>
+          <ul class="admin-menu-list">
+            <li class="admin-menu-item active" id="menu-roles" onclick="switchAdminSection('roles')">
+              <i class="fa-solid fa-briefcase"></i> Roles Database
+            </li>
+            <li class="admin-menu-item" id="menu-languages" onclick="switchAdminSection('languages')">
+              <i class="fa-solid fa-code"></i> Language Roadmaps
+            </li>
+          </ul>
+        </aside>
+
+        <section class="admin-content">
+          <!-- Roles management section -->
+          <div class="admin-section active" id="admin-roles-section">
+            <button class="btn-add" id="btn-add-role"><i class="fa-solid fa-plus"></i> Add New Target Role</button>
+            <table class="crud-table">
+              <thead>
+                <tr>
+                  <th>Category Track</th>
+                  <th>Target Role</th>
+                  <th>Avg Salary</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-roles-table-body">
+                <!-- Dynamically listed roles -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Languages management section -->
+          <div class="admin-section" id="admin-languages-section">
+            <button class="btn-add" id="btn-add-lang"><i class="fa-solid fa-plus"></i> Add Language Timeline</button>
+            <table class="crud-table">
+              <thead>
+                <tr>
+                  <th>Language Name</th>
+                  <th>Description</th>
+                  <th>Weeks Count</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-languages-table-body">
+                <!-- Dynamically listed languages -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <!-- Dynamic Roadmap Side Drawer Modal (Page 5 timeline zoom) -->
+  <div class="drawer-modal" id="language-drawer-modal">
+    <div class="drawer-overlay" id="drawer-overlay-close"></div>
+    <div class="drawer-content">
+      <div class="close-drawer" id="btn-drawer-close">&times;</div>
+      <div class="drawer-body">
+        <span class="hero-badge" style="margin-bottom: 1rem;"><i class="fa-solid fa-code"></i> Live Syllabus</span>
+        <h2 id="drawer-lang-name">JavaScript Integration</h2>
+        <p class="desc" id="drawer-lang-desc">Syllabus description.</p>
+        
+        <div class="drawer-timeline" id="drawer-timeline-steps">
+          <!-- timeline steps loaded dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CRUD Editing Dialog Popup Modal -->
+  <div class="admin-modal" id="admin-edit-modal">
+    <div class="admin-modal-card">
+      <h3 id="admin-modal-title">Edit Target Role Data</h3>
+      <input type="hidden" id="edit-original-name">
+      <input type="hidden" id="edit-original-category">
+      
+      <div id="admin-role-form-fields">
+        <div class="input-group">
+          <label for="form-role-category">Track Category</label>
+          <select id="form-role-category" class="custom-select">
+            <!-- Loaded dynamically from tracks -->
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="form-role-name">Target Role Name</label>
+          <input type="text" id="form-role-name" placeholder="e.g. Machine Learning Engineer">
+        </div>
+        <div class="input-group">
+          <label for="form-role-salary-avg">Average Salary</label>
+          <input type="text" id="form-role-salary-avg" placeholder="e.g. ₹9.0 LPA">
+        </div>
+        <div class="input-group">
+          <label for="form-role-salary-range">Salary Range</label>
+          <input type="text" id="form-role-salary-range" placeholder="e.g. ₹5.0 - ₹18 LPA">
+        </div>
+        <div class="input-group">
+          <label for="form-role-salary-top">Top Earners Salary</label>
+          <input type="text" id="form-role-salary-top" placeholder="e.g. ₹29 LPA">
+        </div>
+        <div class="input-group">
+          <label for="form-role-aptitude">Aptitude Tags (Comma separated)</label>
+          <input type="text" id="form-role-aptitude" placeholder="Logical Reasoning, Algorithmic Thinking">
+        </div>
+        <div class="input-group">
+          <label for="form-role-soft">Soft Skills Tags (Comma separated)</label>
+          <input type="text" id="form-role-soft" placeholder="Team Collaboration, Presentation">
+        </div>
+        <div class="input-group">
+          <label for="form-role-companies">Target Companies (Comma separated)</label>
+          <input type="text" id="form-role-companies" placeholder="Google, Microsoft, Amazon">
+        </div>
+        <div class="input-group">
+          <label for="form-role-techtopics">Tech Topics (One per line)</label>
+          <textarea id="form-role-techtopics" rows="5" style="width:100%; border-radius:12px; border:1px solid #ddd; padding:0.8rem; font-family:inherit; outline:none;" placeholder="Topic 1&#10;Topic 2"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="form-role-softtopics">Soft Skill Topics (One per line)</label>
+          <textarea id="form-role-softtopics" rows="3" style="width:100%; border-radius:12px; border:1px solid #ddd; padding:0.8rem; font-family:inherit; outline:none;" placeholder="Topic 1&#10;Topic 2"></textarea>
+        </div>
+      </div>
+
+      <div id="admin-lang-form-fields" style="display:none;">
+        <div class="input-group">
+          <label for="form-lang-name">Language Name</label>
+          <input type="text" id="form-lang-name" placeholder="e.g. Go">
+        </div>
+        <div class="input-group">
+          <label for="form-lang-desc">Short Description</label>
+          <input type="text" id="form-lang-desc" placeholder="e.g. High-throughput server-side code.">
+        </div>
+        <div class="input-group">
+          <label for="form-lang-steps">Weekly Timeline Syllabus (Separated by empty line)</label>
+          <textarea id="form-lang-steps" rows="10" style="width:100%; border-radius:12px; border:1px solid #ddd; padding:0.8rem; font-family:'JetBrains Mono', monospace; font-size:0.85rem; outline:none;" placeholder="Week 1: Foundations&#10;Study variables.&#10;&#10;Week 2: Control flow&#10;Study loops."></textarea>
+        </div>
+      </div>
+
+      <div class="form-buttons">
+        <button class="btn-cancel" id="btn-edit-cancel">Cancel</button>
+        <button class="btn-save" id="btn-edit-save">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading overlay spinner -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="spinner"></div>
+    <h3>Constructing Learning Strategy...</h3>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
